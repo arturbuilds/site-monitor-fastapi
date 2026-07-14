@@ -3,20 +3,20 @@
 A robust, production-ready asynchronous website monitoring service built with **FastAPI**, **SQLAlchemy 2.0**, and **Celery**. The system automatically tracks website availability in the background and logs status changes.
 
 ## 🛠️ Tech Stack & Features
-- **FastAPI** — high-performance asynchronous web framework.
-- **SQLAlchemy 2.0 (Async)** + **aiosqlite** — clean database integration with async session management.
-- **JWT & Bcrypt** — secure user registration, password hashing, and token-based protection for API routes.
-- **Celery & Redis** — background worker and task scheduler (Celery Beat) running independently.
-- **HTTPX** — fast, non-blocking HTTP requests for website pinging with exception handling.
+- **FastAPI** - high-performance asynchronous web framework.
+- **SQLAlchemy 2.0 (Async)** + **aiosqlite** - clean database integration with async session management.
+- **JWT & Bcrypt** - secure user registration, password hashing, and token-based protection for API routes.
+- **Celery & Redis** - background worker and task scheduler (Celery Beat) running independently.
+- **HTTPX** - fast, non-blocking HTTP requests for website pinging with exception handling.
 
 ## 📁 Project Structure
-- `app/main.py` — application entry point and startup initialization.
-- `app/config.py` — environment configuration managed via `pydantic-settings`.
-- `app/database.py` — db dependency engine and async session makers.
-- `app/models.py` — SQLAlchemy tables (`User` and `Site`) with cascade deletes.
-- `app/schemas.py` — Pydantic data validation and filtering layers.
-- `app/api/` — modular authentication and site management endpoints.
-- `app/tasks/` — Celery worker instance and automated ping tasks.
+- `app/main.py` - application entry point and startup initialization.
+- `app/config.py` - environment configuration managed via `pydantic-settings`.
+- `app/database.py` - db dependency engine and async session makers.
+- `app/models.py` - SQLAlchemy tables (`User` and `Site`) with cascade deletes.
+- `app/schemas.py` - Pydantic data validation and filtering layers.
+- `app/api/` - modular authentication and site management endpoints.
+- `app/tasks/` - Celery worker instance and automated ping tasks.
 
 ## 🚀 How to Run Locally
 
